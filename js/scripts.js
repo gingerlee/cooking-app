@@ -1,9 +1,18 @@
-var gallons = parseFloat(prompt("Enter gallons:"));
+//Gallons to Liters
+// var fromGallons = parseFloat(prompt("Enter gallons:"));
+// var gallonsToLiters = function(fromGallons){
+//   return fromGallons * 4.546;
+// };
+// var toLiters = gallonsToLiters(fromGallons);
+// alert(toLiters + " LITERS!")
 
-var toLiters = function(gallons){
-  return gallons * 3.785411784;
+//Liters to Gallons
+var fromLiters = parseFloat(prompt("Enter Liters:"));
+
+var litersToGallons = function(fromLiters) {
+  return fromLiters * 0.22;
 };
 
-var liters = toLiters(gallons);
+var toGallons = litersToGallons(fromLiters);
 
-alert(liters + " LITERS!")
+alert(toGallons + " GALLONS!");
